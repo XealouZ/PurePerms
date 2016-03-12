@@ -8,7 +8,7 @@
 version: "1.4.0-BETA-04"
 
 # Set default clans plugin for PureChat
-# - ClansPro / FahmiCyber-Clans (§l§9-§8]§b>§7[§cFahmi§aTestSrv§7]§b<§8[§9-) / null
+# - ClansPro / FahmiCyber-Clans (Â§lÂ§9-Â§8]Â§b>Â§7[Â§cFahmiÂ§aTestSrvÂ§7]Â§b<Â§8[Â§9-) / null
 default-clans-plugin: ...
 
 # Enable this if you want to use per-world chat formats / per-world nametags for players
@@ -23,59 +23,20 @@ enable-multiworld-chat: false
 
 # Available PureChat tags: {display_name}, {msg}, {clan_name}, {clan_rank}, {prefix}, {suffix}, {world}
 groups:
-  Owner:
-    nametag: '&8&l[§f?§4Own§cer§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§4Own§cer§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  CoOwner:
-    nametag: '&8&l[§f?§1CoO§9wner§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§1CoO§9wner§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
+  Guest:
+    chat: "&3&l{prefix}&e[Guest]&f&r {display_name} &7> {msg}"
+    nametag: "&3&l{prefix}&e[Guest]&f&r {display_name}"
+    worlds: []
   Admin:
-    nametag: '&8&l[§f?§2Ad§amin§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§2Ad§amin§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  Builder:
-    nametag: '&8&l[§f?§3Buil§bder§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§3Buil§bder§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  Newbie:
-    nametag: '&8&l[§f?§8New§7bie§f?§8]§6=•=§8[§9{cla_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§8New§7bie§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  BeginnerRank:
-    nametag: '&8&l[§f?§5Begin§dner§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§5Begin§dner§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  RookieRank:
-    nametag: '&8&l[§f?§6Roo§ekie§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§6Roo§ekie§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
-  AmateurRank:
-    nametag: '&8&l[§f?§2Ama§ateur§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§2Ama§ateur§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name} &7> {msg}'
-  ProRank:
-    nametag: '&8&l[§f?§1P§9ro§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§1P§9ro§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name} &7> {msg}'
-  IntermediateRank:
-    nametag: '&8&l[§f?§4Inter§cmediate§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f?§4Inter§cmediate§f?§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|{msg}|«§•]&f&r
-      {display_name} &7> {msg}'
-  Helper:
-    nametag: '&8&l[§f©§6Hel§eper§f©§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name}'
-    chat: '&8&l[§f©§6Hel§eper§f©§8]§6=•=§8[§9{clan_name}§8]§6|§7{display_name}§6|§9»|§f{msg}§9|«§•]&f&r
-      {display_name} &7> {msg}'
+    chat: "&3&l{prefix}&c[Admin]&f&r {display_name} &7> {msg}"
+    nametag: "&3&l{prefix}&c[Admin]&f&r {display_name}"
+    worlds: []
+  Owner:
+    chat: "&3&l{prefix}&a[Owner]&f&r {display_name} &7> {msg}"
+    nametag: "&3&l{prefix}&a[Owner]&f&r {display_name}"
+    worlds: []
+  OP:
+    chat: "&3&l{prefix}&9[OP]&f&r {display_name} &7> {msg}"
+    nametag: "&3&l{prefix}&9[OP]&f&r {display_name}"
+    worlds: []
 ...
